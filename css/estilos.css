@@ -96,13 +96,14 @@ button:hover {
         padding: 0 20px;
         margin: 0;
         height: 100vh;
-        background-size: contain;
+        background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
         align-items: center;
         display: flex;
     }
-    
+
+
     #contenedor {
         width: 100%;
         padding: 20px;
