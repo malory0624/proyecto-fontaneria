@@ -122,10 +122,3 @@ button:hover {
         box-shadow: none;
     }
 }
-@media(landscape){
-    body{
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-    }
-}
