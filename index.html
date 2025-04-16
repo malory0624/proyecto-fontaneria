@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Servicios DGM Fontanería</title>
+</head>
+
+<body>
+
+    
+    <div id="contenedor">
+        <h1>Servicios DGM Fontanería</h1>
+        
+        <div id="Formulario_Inicio">
+            <input type="text" id="usuario" placeholder="Usuario">
+            <input type="password" id="contraseña" placeholder="Contraseña">
+            <button onclick="iniciarSesion()" id="boton_inicio">Iniciar</button>
+            <p><a href="#" id="enlace_registro" onclick="mostrarRegistro()" >Regístrate con solo un clic</a></p>
+        </div>
+
+        
+        <div id="Formulario_Registro">
+            <p id="titulo_registro">Formulario de registro</p>
+            <input type="text" id="nuevoUsuario" placeholder="Nombre Usuario">
+            <input type="password" id="nuevaContraseña" placeholder="Contraseña">
+            <input type="password" id="comprobarContraseña" placeholder="repetir contraseña">
+            <input type="email" id="Correo" placeholder="Correo">
+            <input type="tel" id="telefono" placeholder ="telefono">
+            <button onclick="registrarse() " id="boton_registro">Registrarse</button>
+            <p><a href="#" id="enlace_inicio" onclick="mostrarLogin()">Ya tienes cuenta, Inicia sesión</a></p>
+            
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

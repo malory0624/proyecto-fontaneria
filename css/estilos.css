@@ -1,0 +1,90 @@
+input {
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0b7dda;
+}
+
+p {
+    text-align: center;
+}
+
+#Formulario_Registro {
+
+    display: none;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+
+}
+
+#Formulario_Inicio  {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    align-items: center;
+    width: 100%;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../imagenes/fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 80px;
+}
+
+#contenedor {
+    background-color: rgba(255, 255, 255, 0.099);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.718);
+    width: 400px;
+    box-sizing: border-box;
+}
+
+input {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px;
+    width: 100%;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0b7dda;
+}
