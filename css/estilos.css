@@ -102,8 +102,7 @@ button:hover {
         align-items: center;
         display: flex;
     }
-
-
+    
     #contenedor {
         width: 100%;
         padding: 20px;
@@ -121,5 +120,12 @@ button:hover {
     #Formulario_Registro {
         padding: 10px;
         box-shadow: none;
+    }
+}
+@media(landscape){
+    body{
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 }
