@@ -31,9 +31,13 @@ video {
     z-index: -1;
 }
 @media (max-width: 768px) {
-    video {
+    .video-container {
         height: 100vh;
-        width: 100vw;
+    }
+    
+    .video-container video {
+        height: 100%;
+        width: 100%;
     }
 }
 
