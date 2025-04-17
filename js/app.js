@@ -14,7 +14,7 @@ function iniciarSesion() {
     const contraseña = document.getElementById('contraseña').value;
 
     if (usuario == 'admin' && contraseña == '123') {
-        window.location.href = 'principal.html';
+        window.location.href = './html/principal.html';
     } else {
         alert('Usuario o contraseña incorrectos');
     }
@@ -37,9 +37,12 @@ function registrarse() {
         return;
     } else {
         alert('Registro exitoso');
-        window.location.href = 'principal.html';
+        window.location.href = './html/principal.html';
     }
 
+}
+function cerrarSesion() {
+    window.location.href = '../index.html';
 }
 
 
