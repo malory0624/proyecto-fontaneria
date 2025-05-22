@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>DGM Fontanería - Inicio</title>
+    <title>DGM Fontanería - Servicios</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../css/estilosPrincipal.css" />
 </head>
 
 <body>
-
-    <div class="gradient-overlay"></div>
     <header>
         <img src="../imagenes/logo.jpeg" alt="Logo DGM Fontanería" class="logo" />
         <h1>Bienvenido a DGM Fontanería</h1>
@@ -19,42 +17,35 @@
 
     <nav class="menu-navegacion">
         <ul class="menu">
-             <li><a href="./principal.html">Inicio</a></li>
+            <li><a href="./principal.html">Inicio</a></li>
             <li><a href="./productos.html">Productos</a></li>
             <li><a href="./servicios.html">Servicios</a></li>
             <li><a href="./contacto.html">Contacto</a></li>
              <li><a href="./carrito.html">🛒 Ver Carrito (<span id="contador">0</span>)</a></li>
             <li class="cerrar" onclick="cerrarSesion()" id="cerrar">Cerrar Sesión</li>
-           
         </ul>
     </nav>
 
     <main>
-       <video autoplay muted loop playsinline>
+        <video autoplay muted loop playsinline>
     <source src="../imagenes/video.mp4" type="video/mp4" />
     Tu navegador no soporta el video.
   </video>
   <div class="contenido">
-        <section class="presentacion">
-            <h2>Servicios Profesionales de Fontanería</h2>
-            <p>Soluciones rápidas, confiables y económicas para todos tus problemas de fontanería.</p>
-            <a href="./servicios.html" class="btn">Ver Servicios</a>
-        </section>
-
-        <section class="servicios-destacados">
-            <h3>Servicios Destacados</h3>
+        <section class="servicios-lista">
+            <h2>Servicios que Ofrecemos</h2>
             <div class="cards">
                 <div class="card">
                     <h4>Reparación de Fugas</h4>
-                    <p>Detectamos y arreglamos fugas en tuberías sin causar daños mayores.</p>
+                    <p>Atención rápida para cualquier tipo de fuga en tuberías.</p>
                 </div>
                 <div class="card">
-                    <h4>Instalación de Sistemas</h4>
-                    <p>Instalamos sistemas completos de agua potable y calefacción.</p>
+                    <h4>Instalación y Mantenimiento</h4>
+                    <p>Instalamos sistemas completos y realizamos mantenimiento preventivo.</p>
                 </div>
                 <div class="card">
-                    <h4>Mantenimiento Preventivo</h4>
-                    <p>Mantenemos tus sistemas en óptimas condiciones para evitar emergencias.</p>
+                    <h4>Asesoría Técnica</h4>
+                    <p>Orientamos en la mejor solución para tu sistema de fontanería.</p>
                 </div>
             </div>
         </section>
@@ -63,14 +54,14 @@
 
     <footer>
         <p>© 2025 DGM Fontanería | Contacto: contacto@dgmfontaneria.com | Tel: 555-123-4567</p>
-        <p>Síguenos en
-            <a href="#" target="_blank">Facebook</a> |
+        <p>Síguenos en 
+            <a href="#" target="_blank">Facebook</a> | 
             <a href="#" target="_blank">Instagram</a>
         </p>
     </footer>
 
     <script src="../js/app.js"></script>
-        <script src="../js/carrito.js"></script>
+    <script src="../js/carrito.js"></script>
 </body>
 
 </html>

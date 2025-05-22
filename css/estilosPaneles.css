@@ -3,11 +3,6 @@ input {
     padding: 10px;
     width: 200px;
 }
-#rolSeleccionado{
-   margin: 10px;
-    padding: 10px;
-    width: 200px;
-} 
 
 
 button {
@@ -26,30 +21,6 @@ p {
     text-align: center;
 }
 
-#Formulario_Registro {
-
-    display: none;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex-direction: column;
-    width: 100%;
-    box-sizing: border-box;
-    align-items: center;
-
-}
-
-#Formulario_Inicio  {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    align-items: center;
-    width: 100%;
-
-}
 
 body {
     font-family: Arial, sans-serif;
@@ -64,12 +35,12 @@ body {
     padding-right: 80px;
 }
 
-#contenedor {
-    background-color: rgba(255, 255, 255, 0.099);
+.contenido {
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.718);
-    width: 400px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    width: 70%;          
+    max-width: 700px;    
     box-sizing: border-box;
 }
 
@@ -100,6 +71,7 @@ button:hover {
         flex-direction: column;
         justify-content: center;
         padding: 0 20px;
+
         margin: 0;
         height: 100vh;
         background-size: cover;

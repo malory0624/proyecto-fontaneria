@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carrito de Prueba</title>
+</head>
+<body>
+
+<h2>Productos</h2>
+<button onclick="agregarAlCarrito('Producto 1', 150)">Añadir Producto 1 ($150)</button>
+<button onclick="agregarAlCarrito('Producto 2', 250)">Añadir Producto 2 ($250)</button>
+
+<h2>Carrito</h2>
+<ul id="lista-carrito"></ul>
+<p id="total"></p>
+
+<button onclick="finalizarCompra()">Finalizar Compra</button>
+
+<script>
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+function agregarAlCarrito(nombre, precio) {
+  carrito.push({ nombre, precio });
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+  alert(`${nombre} agregado al carrito.`);
+  mostrarCarrito();
+}
+
+function mostrarCarrito() {
+  const lista = document.getElementById("lista-carrito");
+  const total = document.getElementById("total");
+  lista.innerHTML = "";
+  let suma = 0;
+
+  carrito.forEach((item) => {
+    const li = document.createElement("li");
+    li.textContent = `${item.nombre} - $${item.precio}`;
+    lista.appendChild(li);
+    suma += item.precio;
+  });
+
+  total.textContent = `Total: $${suma}`;
+}
+
+// Muestra el carrito al cargar la página
+mostrarCarrito();
+
+function finalizarCompra() {
+  alert("Gracias por tu compra. Nos comunicaremos contigo pronto.");
+  localStorage.removeItem("carrito");
+  carrito = [];
+  mostrarCarrito();
+  setTimeout(() => {
+    window.location.href = "../principal.html";
+  }, 100);
+}
+</script>
+
+</body>
+</html>

@@ -1,129 +1,277 @@
-body{
+
+* {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-}
-h1 {
-    font-size: 8vw;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    margin: 0;
-    padding: 0 10px;
-    width: 100vw;
-    word-wrap: break-word;
+    
 }
 
-.cabecera {
+body{
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background: #111;
+    color: #fff;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+     justify-content: center;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+header .logo {
+    height: 10vh;
+    margin-right: 1rem;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-weight: 700vh;
+    font-size: 3vw;
+    color: #f0a500;
+   
+}
+
+/* Navegación */
+nav.menu-navegacion {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.8rem 2rem;
+    position: sticky;
+    top: 70px;
+    z-index: 20;
+}
+
+nav.menu-navegacion ul.menu {
+    list-style: none;
     display: flex;
     justify-content: center;
-    text-align: center;
-    width: 100vw;
-    height: 20vh;
-    background:rgb(78, 34, 5);
-    box-shadow: 0px 32px 21px 2px black;
+    gap: 2rem;
 }
 
-
-#logo {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
+nav.menu-navegacion ul.menu li {
+    font-weight: 600;
 }
 
-video {
-    position: fixed;
+nav.menu-navegacion ul.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav.menu-navegacion ul.menu li a:hover {
+    background-color: #f0a500;
+    color: #000;
+}
+
+nav.menu-navegacion ul.menu li.cerrar {
+    cursor: pointer;
+    color: #f44336;
+    font-weight: 700;
+}
+
+/* Main */
+main {
+    position: relative;
+    
+    padding: 4vh 2vh;
+    margin: 0 auto;
+    overflow: hidden;  
+    min-height: 60vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2px; 
+}
+
+main video {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: 0;
+    filter: brightness(0.5);
 }
 
-
-@media (max-width: 600px) {
-    body {
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 20px;
-        margin: 0;
-        height: 100vh;
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat;
-        align-items: center;
-        display: flex;
-    }
-    .logo{
-    max-width: 30%;
-    height: auto;
-    }
-
-    .menu-navegacion ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    gap: 40px;
-    padding: 0;
-    margin: 10px 0;
-    flex-wrap: wrap;
-}
-
-
-    .cabecera {
-    display: flex;
-    justify-content: center;
+main .contenido {
+    position:relative;
+    font-size: 1.5rem;
+    z-index: 1;
+    max-width: 900px; 
+    color: white;
     text-align: center;
-    width: 100vw;
-    background:rgb(78, 34, 5);
-    box-shadow: 0px 32px 21px 2px black;
-}
-
     
 }
 
 
-.menu-navegacion ul li:hover {
-    color: #484444;
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: color 0.5s ease-in-out, transform 0.6s ease-in-out;
+/* Presentación */
+.presentacion {
+    text-align: center;
+    margin-bottom: 4rem;
 }
 
-
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
-    margin-top: 20px;
-    max-width: 100%;
-    gap: 60px;
-    font-size: 20px;
-    font-family:' Raleway-Italic', sans-serif;
-    margin-right: 50px;
+.presentacion h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f0a500;
 }
 
-a {
+.presentacion p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.presentacion .btn {
+    background-color: #f0a500;
+    color: #000;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-weight: 700;
     text-decoration: none;
-    color: rgba(27, 27, 27, 96.1%);
-    text-shadow: 0 0 15px rgba(255, 255, 255, 88.8%), 0 0 10px rgba(255, 255, 255, 0.185);
+    transition: background-color 0.3s ease;
 }
 
-main {
-    min-height: 60vh;
-    max-width: 100vw;
+.presentacion .btn:hover {
+    background-color: #cf8c00;
+    color: #fff;
+}
+
+/* Servicios*/
+.servicios-destacados {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.servicios-destacados h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #f0a500;
+}
+
+.servicios-destacados .cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.servicios-destacados .card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(240, 165, 0, 0.7);
+    transition: transform 0.3s ease;
+}
+
+.servicios-destacados .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(240, 165, 0, 0.9);
+}
+
+.servicios-destacados .card h4 {
+    margin-bottom: 1rem;
+    color: #f0a500;
+}
+
+.servicios-destacados .card p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+footer a {
+    color: #f0a500;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 
-.video-container {
-    position: relative;
+/*menu*/
+.menu li a.activo {
+    background-color: #f0a500;
+    color: #000;
+    border-radius: 5px;
+}
+
+/* Formularios */
+.contacto-form form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contacto-form label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.contacto-form input,
+.contacto-form textarea {
     width: 100%;
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
 }
 
-.video-container video {
+.contacto-form button.btn {
+    display: block;
     width: 100%;
-    height: auto;
+    background-color: #f0a500;
+    color: #000;
+    font-weight: 700;
+    padding: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto-form button.btn:hover {
+    background-color: #cf8c00;
+    color: #fff;
+}
+
+/* Mapa */
+.map-container {
+    max-width: 900px;
+    margin: 2rem auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(240, 165, 0, 0.7);
+}
+
+/*direccion */
+address {
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #ddd;
 }

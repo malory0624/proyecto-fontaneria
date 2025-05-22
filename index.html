@@ -17,6 +17,12 @@
         <div id="Formulario_Inicio">
             <input type="text" id="usuario" placeholder="Usuario">
             <input type="password" id="contraseña" placeholder="Contraseña">
+            <p>Selecion de rol de ingreso</p>
+             <select id="rolSeleccionado">
+                <option value="cliente">Cliente</option>
+                <option value="fontanero">Fontanero</option>
+                <option value="admin">Administrativo</option>
+            </select>
             <button onclick="iniciarSesion()" id="boton_inicio">Iniciar</button>
             <p><a href="#" id="enlace_registro" onclick="mostrarRegistro()" >Regístrate con solo un clic</a></p>
         </div>

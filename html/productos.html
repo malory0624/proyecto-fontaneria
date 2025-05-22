@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DGM Fontanería - Productos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/estilosPrincipal.css" />
+</head>
+
+<body>
+    <header>
+        <img src="../imagenes/logo.jpeg" alt="Logo DGM Fontanería" class="logo" />
+        <h1>Bienvenido a DGM Fontanería</h1>
+    </header>
+
+    <nav class="menu-navegacion">
+        <ul class="menu">
+            <li><a href="./principal.html">Inicio</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./servicios.html">Servicios</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+             <li><a href="./carrito.html">🛒 Ver Carrito (<span id="contador">0</span>)</a></li>
+            <li class="cerrar" onclick="cerrarSesion()" id="cerrar">Cerrar Sesión</li>
+        </ul>
+    </nav>
+
+    <main>
+        <video autoplay muted loop playsinline>
+            <source src="../imagenes/video.mp4" type="video/mp4" />
+            Tu navegador no soporta el video.
+        </video>
+        <div class="contenido">
+            <section class="productos-lista">
+                <h2>Nuestros Productos</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h4>Llaves de paso</h4>
+                        <img src="../imagenes/llavePaso.jpg" alt="llave de paso">
+                        <p>Llaves de alta calidad para controlar el flujo de agua en tuberías.</p>
+                        <p>7.20€</p>
+                        <button onclick="agregarAlCarrito('Llave de Paso', 7.20)">Agregar al carrito</button>
+                    </div>
+                    <div class="card">
+                        <h4>Tuberías PVC</h4>
+                        <img src="../imagenes/tuberiasPvc.jpg" alt="tuberiuas pvc" >
+                        <p>Tuberías resistentes y duraderas para instalaciones domésticas y comerciales.</p>
+                        <p>2.65€</p>
+                        <button onclick="agregarAlCarrito('Tuberías PVC de Paso', 2.65)">Agregar al carrito</button>
+                    </div>
+                    <div class="card">
+                        <h4>Grifería</h4>
+                        <img src="../imagenes/griferia.jpg" alt="griferia" >
+                        <p>Amplia variedad de grifos para cocina, baño y exteriores.</p>
+                        <p>16.65€</p>
+                        <button onclick="agregarAlCarrito('Grifería PVC de Paso', 16.65)">Agregar al carrito</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 DGM Fontanería | Contacto: contacto@dgmfontaneria.com | Tel: 555-123-4567</p>
+        <p>Síguenos en
+            <a href="#" target="_blank">Facebook</a> |
+            <a href="#" target="_blank">Instagram</a>
+        </p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/carrito.js"></script>
+</body>
+
+</html>

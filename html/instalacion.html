@@ -1,0 +1,67 @@
+<main class="container mt-4">
+  <h2>Solicitud de Instalación</h2>
+  <form id="form-instalacion">
+    <div class="mb-3">
+      <label for="cliente" class="form-label">Cliente</label>
+      <select id="cliente" name="cliente" class="form-select" required>
+        <!-- Rellenar dinámicamente -->
+        <option value="">Seleccione un cliente</option>
+        <option value="1">Cliente 1</option>
+        <option value="2">Cliente 2</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="fecha" class="form-label">Fecha preferida</label>
+      <input type="date" id="fecha" name="fecha" class="form-control" required />
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Productos a instalar</label>
+      <div id="productos-lista">
+        <div class="input-group mb-2">
+          <select class="form-select" name="productos[]" required>
+            <option value="">Seleccione producto</option>
+            <option value="p1">Producto 1</option>
+            <option value="p2">Producto 2</option>
+          </select>
+          <input type="number" name="cantidades[]" class="form-control" min="1" value="1" required />
+          <button class="btn btn-danger btn-remove-producto" type="button">Eliminar</button>
+        </div>
+      </div>
+      <button class="btn btn-secondary" type="button" id="agregar-producto">Añadir producto</button>
+    </div>
+
+    <div class="mb-3">
+      <label for="observaciones" class="form-label">Observaciones</label>
+      <textarea id="observaciones" name="observaciones" class="form-control"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+  </form>
+</main>
+
+<script>
+  document.getElementById('agregar-producto').addEventListener('click', function () {
+    const contenedor = document.getElementById('productos-lista');
+    const nuevoProducto = document.createElement('div');
+    nuevoProducto.className = 'input-group mb-2';
+    nuevoProducto.innerHTML = `
+      <select class="form-select" name="productos[]" required>
+        <option value="">Seleccione producto</option>
+        <option value="p1">Producto 1</option>
+        <option value="p2">Producto 2</option>
+      </select>
+      <input type="number" name="cantidades[]" class="form-control" min="1" value="1" required />
+      <button class="btn btn-danger btn-remove-producto" type="button">Eliminar</button>
+    `;
+    contenedor.appendChild(nuevoProducto);
+  });
+
+  document.getElementById('productos-lista').addEventListener('click', function (e) {
+    if (e.target.classList.contains('btn-remove-producto')) {
+      e.target.parentElement.remove();
+    }
+  });
+
+
+</script>
