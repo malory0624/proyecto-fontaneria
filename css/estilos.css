@@ -3,11 +3,12 @@ input {
     padding: 10px;
     width: 200px;
 }
-#rolSeleccionado{
-   margin: 10px;
+
+#rolSeleccionado {
+    margin: 10px;
     padding: 10px;
     width: 200px;
-} 
+}
 
 
 button {
@@ -39,7 +40,7 @@ p {
 
 }
 
-#Formulario_Inicio  {
+#Formulario_Inicio {
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -108,24 +109,31 @@ button:hover {
         align-items: center;
         display: flex;
     }
+}
+
+#rolSeleccionado,
+input,
+button {
+    width: 100%;
+    font-size: 18px;
+}
 
 
-    #contenedor {
-        width: 100%;
-        padding: 20px;
-        box-shadow: none;
-        background-color: rgba(255, 255, 255, 0.85);
-    }
+#contenedor {
+    width: 100%;
+    padding: 20px;
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.85);
+}
 
-    input,
-    button {
-        width: 100%;
-        font-size: 16px;
-    }
+input,
+button {
+    width: 100%;
+    font-size: 16px;
+}
 
-    #Formulario_Inicio,
-    #Formulario_Registro {
-        padding: 10px;
-        box-shadow: none;
-    }
+#Formulario_Inicio,
+#Formulario_Registro {
+    padding: 10px;
+    box-shadow: none;
 }
