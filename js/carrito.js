@@ -36,3 +36,5 @@ function finalizarCompra() {
   window.location.href = 'principal.html';
 }
 
+document.addEventListener("DOMContentLoaded", actualizarContadorCarrito);
+
