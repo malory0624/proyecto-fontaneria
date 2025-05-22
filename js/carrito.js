@@ -2,7 +2,7 @@
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 function actualizarContadorCarrito() {
-  const contador = document.getElementById("contador-carrito");
+  const contador = document.getElementById("contador");
   contador.textContent = carrito.length;
 }
 
