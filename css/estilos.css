@@ -84,10 +84,12 @@ body {
 
 #contenedor {
     background-color: rgba(255, 255, 255, 0.099);
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.718);
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
     box-sizing: border-box;
 }
 
@@ -117,7 +119,7 @@ button:hover {
     body {
         flex-direction: column;
         justify-content: center;
-        padding: 0 20px;
+        padding: 0 50px;
         margin: 0;
         height: 100vh;
         background-size: cover;
@@ -126,6 +128,8 @@ button:hover {
         align-items: center;
         display: flex;
     }
+    
+  
 }
 
 #rolSeleccionado,
@@ -134,11 +138,15 @@ button {
     width: 100%;
     font-size: 18px;
 }
+main{
+    padding: 20px;
+}
 
 
 #contenedor {
     width:max-content;
-    padding: 30px;
+    padding: 40px;
+     margin: 0 50px;
     box-shadow: none;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.85);
@@ -152,6 +160,6 @@ button {
 
 #Formulario_Inicio,
 #Formulario_Registro {
-    padding: 10px;
+    padding: 30px;
     box-shadow: none;
 }

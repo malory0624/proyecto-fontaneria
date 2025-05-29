@@ -36,13 +36,6 @@ h1 {
 
 }
 
-p {
-    white-space: normal;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
-}
-
 /* Navegación */
 nav.menu-navegacion {
     display: flex;
@@ -50,7 +43,6 @@ nav.menu-navegacion {
     justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 0.8rem 2rem;
-
     top: 70px;
     z-index: 20;
 }
