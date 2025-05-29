@@ -1,11 +1,10 @@
-
 * {
     margin: 0;
     padding: 0;
-    
+
 }
 
-body{
+body {
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
     background: #111;
@@ -17,7 +16,7 @@ body{
 header {
     display: flex;
     align-items: center;
-     justify-content: center;
+    justify-content: center;
     padding: 1rem 2rem;
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
@@ -31,10 +30,17 @@ header .logo {
 }
 
 h1 {
-    
+
     font-size: 5vw;
     color: #f0a500;
-   
+
+}
+
+p {
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 /* Navegación */
@@ -44,7 +50,7 @@ nav.menu-navegacion {
     justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 0.8rem 2rem;
-   
+
     top: 70px;
     z-index: 20;
 }
@@ -81,15 +87,18 @@ nav.menu-navegacion ul.menu li.cerrar {
 
 @media (max-width: 768px) {
 
-  nav.menu-navegacion ul.menu {
-    flex-direction: column;  
-    align-items: center;     
-    gap: 1rem;              
-    width: 100%;             
-    max-width: 300px;        
-    margin: 0 auto;          
-    padding: 0;
-  }
+    nav.menu-navegacion ul.menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+
+
 
 }
 
@@ -99,13 +108,14 @@ main {
     position: relative;
     padding: 4vh 2vh;
     margin: 0 auto;
-    overflow: hidden;  
-    min-height: 60vh; 
+    min-height: 60vh;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:2px; 
+    gap: 2px;
+
 }
 
 main video {
@@ -120,13 +130,23 @@ main video {
 }
 
 main .contenido {
-    position:relative;
+    position: relative;
     font-size: 1.5rem;
     z-index: 1;
-    max-width: 900px; 
+    max-width: 100%;
+    width: 90vw;
     color: white;
     text-align: center;
-    
+    word-break: break-word;
+    padding: 0 1rem;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
 }
 
 

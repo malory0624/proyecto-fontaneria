@@ -19,6 +19,7 @@ button:hover {
 
 p {
     text-align: center;
+    justify-content: space-around;
 }
 
 
@@ -100,4 +101,5 @@ button:hover {
         padding: 10px;
         box-shadow: none;
     }
+
 }
