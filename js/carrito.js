@@ -1,10 +1,18 @@
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
+function actualizarContadorCarrito() {
+  const contador = document.getElementById("contador");
+  contador.textContent = carrito.length;
+}
+
+
+
 function agregarAlCarrito(nombre, precio) {
   carrito.push({ nombre, precio });
   localStorage.setItem("carrito", JSON.stringify(carrito));
   alert(`${nombre} agregado al carrito.`);
+  actualizarContadorCarrito();
 }
 
 function mostrarCarrito() {
@@ -28,4 +36,6 @@ function finalizarCompra() {
   localStorage.removeItem("carrito");
   window.location.href = 'principal.html';
 }
+
+document.addEventListener("DOMContentLoaded", actualizarContadorCarrito);
 
